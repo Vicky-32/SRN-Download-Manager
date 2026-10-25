@@ -1,0 +1,199 @@
+{
+  "appVersion": "1.16.1",
+  "completeCorrespondingSource": false,
+  "hashMeaning": "Initial SHA-256 values record bytes obtained over HTTPS from reviewed upstream URLs; they are not independent author-signature verification or proof of complete binary correspondence.",
+  "sources": [
+    {
+      "id": "aria2",
+      "file": "aria2-1.37.0.tar.xz",
+      "version": "1.37.0",
+      "url": "https://github.com/aria2/aria2/releases/download/release-1.37.0/aria2-1.37.0.tar.xz",
+      "scope": "Core source and Windows Dockerfile; static dependencies listed separately",
+      "sha256": "60a420ad7085eb616cb6e2bdf0a7206d68ff3d37fb5a956dc44242eb2f79b66b",
+      "bytes": 1705256
+    },
+    {
+      "id": "gmp",
+      "file": "gmp-6.3.0-complete.tar.xz",
+      "version": "6.3.0",
+      "url": "https://ftp.gnu.org/gnu/gmp/gmp-6.3.0.tar.xz",
+      "scope": "aria2 Windows Dockerfile dependency",
+      "sha256": "a3c2b80201b89e68616f4ad30bc66aee4927c3ce50e33929ca819d5c43538898",
+      "bytes": 2094196
+    },
+    {
+      "id": "expat",
+      "file": "expat-2.5.0.tar.bz2",
+      "version": "2.5.0",
+      "url": "https://github.com/libexpat/libexpat/releases/download/R_2_5_0/expat-2.5.0.tar.bz2",
+      "scope": "aria2 Windows Dockerfile dependency",
+      "sha256": "6f0e6e01f7b30025fa05c85fdad1e5d0ec7fd35d9f61b22f34998de11969ff67",
+      "bytes": 569205
+    },
+    {
+      "id": "sqlite",
+      "file": "sqlite-autoconf-3430100.tar.gz",
+      "version": "3.43.1",
+      "url": "https://www.sqlite.org/2023/sqlite-autoconf-3430100.tar.gz",
+      "scope": "aria2 Windows Dockerfile dependency",
+      "sha256": "39116c94e76630f22d54cd82c3cea308565f1715f716d1b2527f1c9c969ba4d9",
+      "bytes": 3175971
+    },
+    {
+      "id": "zlib",
+      "file": "zlib-1.3.tar.gz",
+      "version": "1.3",
+      "url": "https://zlib.net/fossils/zlib-1.3.tar.gz",
+      "scope": "aria2 Windows Dockerfile dependency; upstream historical archive",
+      "sha256": "ff0ba4c292013dbc27530b3a81e1f9a813cd39de01ca5e0f8bf355702efa593e",
+      "bytes": 1495873
+    },
+    {
+      "id": "c-ares",
+      "file": "c-ares-1.19.1.tar.gz",
+      "version": "1.19.1",
+      "url": "https://github.com/c-ares/c-ares/releases/download/cares-1_19_1/c-ares-1.19.1.tar.gz",
+      "scope": "aria2 Windows Dockerfile dependency",
+      "sha256": "321700399b72ed0e037d0074c629e7741f6b2ec2dda92956abe3e9671d3e268e",
+      "bytes": 1579100
+    },
+    {
+      "id": "libssh2",
+      "file": "libssh2-1.11.0.tar.bz2",
+      "version": "1.11.0",
+      "url": "https://libssh2.org/download/libssh2-1.11.0.tar.bz2",
+      "scope": "aria2 Windows Dockerfile dependency",
+      "sha256": "e56d81f01f090d3c6eaf5f56c645610fd1a90d92819541d0079ae363d1eed11e",
+      "bytes": 846271
+    },
+    {
+      "id": "yt-dlp-release",
+      "file": "yt-dlp-release-3a08beaf.zip",
+      "version": "2026.08.19 release ref 3a08beaf031ab68f966401ead017ac81fe8486cf",
+      "url": "https://codeload.github.com/yt-dlp/yt-dlp/zip/3a08beaf031ab68f966401ead017ac81fe8486cf",
+      "scope": "Release-tag source including build scripts and notices; generated RELEASE_GIT_HEAD explains the runtime code ref",
+      "sha256": "fe8e4ef0b67554c7c2f2c016671fb3a130bb1333bd47dbba9268be188d825950",
+      "bytes": 3853340
+    },
+    {
+      "id": "yt-dlp-runtime",
+      "file": "yt-dlp-runtime-594bd50c.zip",
+      "version": "2026.08.19 runtime-reported commit 594bd50c2c78ac432f81600d309fdc4e0a92d82c",
+      "url": "https://codeload.github.com/yt-dlp/yt-dlp/zip/594bd50c2c78ac432f81600d309fdc4e0a92d82c",
+      "scope": "Runtime code ref explicitly recorded by release version metadata; executable hash matches official release asset",
+      "sha256": "94b42d712a81c2ff838aae3cfdf39809b917d849b7901d67e21f809dfdccf52a",
+      "bytes": 3851185
+    },
+    {
+      "id": "windows-ffmpeg",
+      "file": "ffmpeg-946fcce07b.zip",
+      "version": "9.0.2 build README commit 946fcce07b6dcd0331c8cc609192aeff5e1924f8",
+      "url": "https://codeload.github.com/FFmpeg/FFmpeg/zip/946fcce07b6dcd0331c8cc609192aeff5e1924f8",
+      "scope": "FFmpeg core source only; linked dependency commits/build inputs remain unresolved",
+      "sha256": "8cffa6ccf78df6d39d57bd61baaf19e8bf0a7d590eef0d838de69932e8de3572",
+      "bytes": 23728830
+    },
+    {
+      "id": "android-wrapper",
+      "file": "youtubedl-android-d725d5c9.zip",
+      "version": "0.18.1 commit d725d5c9a18c3a99a13ee0308bf78275dc310760",
+      "url": "https://codeload.github.com/yausername/youtubedl-android/zip/d725d5c9a18c3a99a13ee0308bf78275dc310760",
+      "scope": "Wrapper source/build guidance and upstream prebuilt payloads; prebuilt payloads are not native corresponding source",
+      "sha256": "bbad5b74b9696dc1bcfd89413ca52a2222f3c99123b22b4e16d6c6432459868d",
+      "bytes": 219037795
+    },
+    {
+      "id": "libtorrent4j",
+      "file": "libtorrent4j-da7d2403.zip",
+      "version": "2.1.0-39 commit da7d2403f06a0939bc2c51a88e67a6c4a85512ef",
+      "url": "https://codeload.github.com/aldenml/libtorrent4j/zip/da7d2403f06a0939bc2c51a88e67a6c4a85512ef",
+      "scope": "Wrapper and native build recipes; pinned libtorrent submodule provided separately",
+      "sha256": "010b171f5961084ca945706d38f50bbd995c29909be23576e67c8034cc06ab7d",
+      "bytes": 1141631
+    },
+    {
+      "id": "libtorrent",
+      "file": "libtorrent-24a3adf3.zip",
+      "version": "gitlink 24a3adf35d3e689bde700371337aad61b160bafa",
+      "url": "https://codeload.github.com/arvidn/libtorrent/zip/24a3adf35d3e689bde700371337aad61b160bafa",
+      "scope": "Exact libtorrent4j gitlink; Boost/OpenSSL binary build mapping not yet independently verified",
+      "sha256": "b4f71451c7c56a88c37a531db6ecde4b2632a3a4e4555cfa094be7d4b7f8afa8",
+      "bytes": 4948371
+    },
+    {
+      "id": "libwebp",
+      "file": "libwebp-1.6.0.zip",
+      "version": "1.6.0 commit 4fa21912338357f89e4fd51cf2368325b59e9bd9",
+      "url": "https://github.com/webmproject/libwebp/archive/refs/tags/v1.6.0.zip",
+      "sha256": "7a89bb7a6a0c30b5c0f521c2673635381b4e7c916585f4a1f702d3b47f15d5e5",
+      "scope": "Exact source archive used by SRN's five-library Android 16 KB rebuild",
+      "bytes": 4037772
+    },
+    {
+      "id": "deno",
+      "file": "deno-0c071246.zip",
+      "version": "2.9.7 commit 0c071246a412575e07423263404a5d13e7ed6aa2",
+      "url": "https://codeload.github.com/denoland/deno/zip/0c071246a412575e07423263404a5d13e7ed6aa2",
+      "scope": "Deno primary source/lockfiles; external native dependency source coverage remains unverified",
+      "sha256": "c7fdd0aa9104332712876677da2b9e643266b08e740c5522449c3decde6fe4e9",
+      "bytes": 39389516
+    },
+    {
+      "id": "mutagen",
+      "file": "mutagen-1.48.1.tar.gz",
+      "version": "1.48.1",
+      "url": "https://files.pythonhosted.org/packages/df/70/1675da133ea92227da41bf5b24e1c66be597ff736a1533ade41da986852f/mutagen-1.48.1.tar.gz",
+      "scope": "yt-dlp optional GPL dependency; source digest matches the exact release requirements and PyPI metadata, runtime version observed",
+      "sha256": "8f95637ab9f6f305cec6bd1294e197debe207998e3e068596563c74f86b0a173",
+      "bytes": 1276978
+    },
+    {
+      "id": "windows-ffmpeg-rubberband",
+      "file": "rubberband-1d95888b.zip",
+      "version": "v4.0.0 commit 1d95888bec3ae0a17c0c4af791810d5a63f6bc35",
+      "url": "https://codeload.github.com/breakfastquay/rubberband/zip/1d95888bec3ae0a17c0c4af791810d5a63f6bc35",
+      "scope": "Windows FFmpeg bundled README dependency version/ref; provider patches and complete build mapping remain unverified",
+      "sha256": "19ad83ba3d2e80ec910a1db309ea8c036073ef9b398654aa5e7e5c778eea3193",
+      "bytes": 422463
+    },
+    {
+      "id": "windows-ffmpeg-vidstab",
+      "file": "vidstab-e2445c40.zip",
+      "version": "v1.1.2-214-ge2445c4 commit e2445c4081658318223762a696eb1c645c2d7168",
+      "url": "https://codeload.github.com/georgmartius/vid.stab/zip/e2445c4081658318223762a696eb1c645c2d7168",
+      "scope": "Windows FFmpeg bundled README dependency version/ref; provider patches and complete build mapping remain unverified",
+      "sha256": "8096e3a00e650f19110e15b9ddd4a606a8797082e8d014a11754c4845639278a",
+      "bytes": 407743
+    }
+  ],
+  "unresolved": [
+    {
+      "id": "windows-ffmpeg-dependencies",
+      "detail": "Bundled build README preserves configuration and several dependency version/commit labels; FFmpeg core, Rubber Band v4.0.0 and VidStab e2445c4 sources are collected. Complete matching linked-library sources, provider patches and build inputs remain unverified; the broad mirror README is not a locked build recipe."
+    },
+    {
+      "id": "android-native-payloads",
+      "detail": "FFmpeg AAR byte audit verifies 10 SRN libwebp replacements across two ABIs, 214 unchanged upstream ELF entries and matching native bytes in all four final APKs. Matching sources/patches/build inputs for upstream FFmpeg, Python/QuickJS and transitive native payloads remain unverified."
+    },
+    {
+      "id": "yt-dlp-bundled-dependencies",
+      "detail": "Release/runtime metadata mapping is verified locally against pinned source trees and the official executable digest. Mutagen 1.48.1 source matches release requirement locks. Complete source, patches and build-input coverage for all bundled dependencies remains unverified; no reproducible-build claim."
+    },
+    {
+      "id": "native-transitive-coverage",
+      "detail": "Confirm libtorrent4j native dependency revisions against the Maven binary build, Deno native dependency notice/source obligations, Flutter/native plugin distribution requirements and the remaining compiler/runtime exception terms."
+    },
+    {
+      "id": "public-source-delivery",
+      "detail": "This kit is local and partial. No equivalent-access public distribution location, complete corresponding-source offer or legal clearance is asserted."
+    }
+  ],
+  "resolved": [
+    {
+      "id": "yt-dlp-release-metadata-mapping",
+      "evidence": "provenance/yt-dlp-release-mapping.json",
+      "verifier": "scripts/verify_ytdlp_provenance.py",
+      "detail": "Release-tag version.py records runtime commit 594bd50c2. Local source-tree differences contain only release metadata/docs, and the executable SHA-256 matches the official release asset."
+    }
+  ]
+}

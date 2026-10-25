@@ -1,0 +1,25 @@
+# Third-party components
+
+The SRN source is distributed under GNU GPL version 3 (see LICENSE), matching the Android wrapper dependency. Generated test video/audio is original synthetic test material.
+
+| Component | Source / license |
+| --- | --- |
+| Flutter / Dart | https://github.com/flutter/flutter — BSD-3-Clause; Flutter package notices are available through Settings → Flutter package licenses |
+| yt-dlp 2026.08.19 | https://github.com/yt-dlp/yt-dlp/tree/2026.08.19 — source is Unlicense; the PyInstaller Windows executable bundles additional components and is subject to GPLv3+ and other upstream terms. Exact-tag upstream notices are preserved in licenses/yt-dlp-2026.08.19-THIRD-PARTY.txt and licenses/yt-dlp-Unlicense.txt. The Android zipimport payload also includes ISC/MIT code. A source URL alone is not proof that redistribution obligations are satisfied. See compliance/REVIEW.md. |
+| Windows FFmpeg | https://www.gyan.dev/ffmpeg/builds/ — GPL v3 essentials build, source/build configuration: https://github.com/GyanD/codexffmpeg and https://ffmpeg.org/download.html; the build's license and README accompany the tools |
+| Deno | https://github.com/denoland/deno — MIT, third-party notices: https://github.com/denoland/deno/blob/main/third_party/README.md |
+| Windows aria2 1.37.0 | https://github.com/aria2/aria2/tree/release-1.37.0 — GPL-2.0-or-later; unmodified official win-64bit-build1 executable. License and upstream linked-library build notes are in licenses/aria2-*.txt. Corresponding source: https://github.com/aria2/aria2/releases/download/release-1.37.0/aria2-1.37.0.tar.xz; upstream Windows build recipe: https://github.com/aria2/aria2/blob/release-1.37.0/Dockerfile.mingw. Pinned download/checksum setup: scripts/Setup-TorrentTools.ps1. |
+| youtubedl-android 0.18.1 | https://github.com/yausername/youtubedl-android/tree/0.18.1 — GPL-3.0; includes Python, QuickJS, yt-dlp and supporting libraries, each under its respective upstream license |
+| Android FFmpeg payload | https://github.com/yausername/youtubedl-android/tree/0.18.1/ffmpeg — GPL-3.0; build guidance and underlying dependencies are in the upstream repository |
+| libwebp 1.6.0 | https://github.com/webmproject/libwebp/tree/v1.6.0 — BSD-3-Clause, PATENTS grant: https://github.com/webmproject/libwebp/blob/v1.6.0/PATENTS; five libraries rebuilt using the unmodified source and NDK r28, see scripts/Prepare-Android.ps1 |
+| libtorrent4j 2.1.0-39 | https://github.com/aldenml/libtorrent4j/tree/v2.1.0-39 — MIT; unmodified ARM64/x86_64 Maven native artifacts, hashes in android/app/libs/torrent-provenance.json |
+| libtorrent | https://github.com/arvidn/libtorrent — BSD-3-Clause; underlying torrent engine with Boost/OpenSSL dependencies as identified in the upstream build |
+| SQLite | https://sqlite.org — public domain; Dart bindings and Flutter package licenses are included by the Flutter license registry |
+| Dart cryptography 2.9.0 | https://pub.dev/packages/cryptography — Apache-2.0; used for Ed25519 signed update manifest verification. License preserved in licenses/cryptography-Apache-2.0.txt and Flutter package licenses. |
+| Manrope typeface | https://github.com/google/fonts/tree/main/ofl/manrope — SIL Open Font License 1.1, included in licenses/Manrope-OFL.txt; bundled locally, no runtime font requests |
+
+The compatibility AAR changes only the five libwebp shared libraries for 16 KB page alignment; all remaining FFmpeg AAR entries are retained from the Maven Central 0.18.1 artifact. `android/app/libs/native-provenance.json` records output SHA-256 hashes. Source URLs, versions, scripts and lockfiles are included to reproduce these builds. For redistribution, preserve all component notices and supply the applicable corresponding source and build information required by their licenses.
+
+This file is an inventory, not a legal clearance. The technical gaps and release
+review steps are tracked in compliance/REVIEW.md. Flutter's package license
+registry does not establish coverage of separately bundled native engines.
