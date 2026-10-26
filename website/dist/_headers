@@ -1,5 +1,7 @@
 /release.js
   Cache-Control: no-cache
+/updates/*
+  Cache-Control: no-store
 /
   Cache-Control: no-cache
 /*

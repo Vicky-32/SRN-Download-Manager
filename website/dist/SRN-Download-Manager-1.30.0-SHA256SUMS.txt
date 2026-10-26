@@ -1,0 +1,5 @@
+1d0e575f8e8f4ec11d70567667d252d02530a499dda7dfa81608a7df97fa859d  SRN-Video-Downloader-1.30.0-Windows-Setup.exe
+f000513dbda14deffe3cdd9aa54fd4574d21858c8b9d936f7bfebacf6f1ad731  SRN-Video-Downloader-1.30.0-arm64-v8a-production-signed.apk
+ea56e63d02df82f5304fcc5e6013053b64e8c122aff92c95701f1d06a18fc908  SRN-Download-Manager-Other-PC-Setup-1.30.0.zip
+725f0a12a3c3943535315098b1b173856381b12938da41ef4abbaeb01ebe5b4a  SRN-Browser-Extension-1.6.0.zip
+fb486f44f87aafb7802ca01cbbebc0306ccb0d637ab03460b7f19e77f92c6c8c  SRN-Video-Downloader-1.30.0-Source.zip

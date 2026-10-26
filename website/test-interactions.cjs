@@ -22,7 +22,7 @@ vm.runInContext(metadata,context);vm.runInContext(code,context);
 theme.click();assert.equal(document.documentElement.dataset.theme,'light');
 theme.click();assert.equal(document.documentElement.dataset.theme,'dark');
 previews[1].click();assert.equal(preview.src,'assets/queue-light.png');assert.equal(previews[1].attrs['aria-pressed'],'true');assert.equal(previews[0].attrs['aria-pressed'],'false');
-for(const link of links){assert.match(link.href,/^https:\/\/github.com\/Vicky-32\/SRN-Download-Manager\/releases\/download\/v1\.29\.0\//);assert.equal(link.click(),false);}
-assert.match(status.textContent,/Version 1\.29\.0/);assert.ok(hashes.every(item=>!item.disabled));
+for(const link of links){assert.ok(link.href.startsWith(`https://github.com/Vicky-32/SRN-Download-Manager/releases/download/v${context.window.SRN_RELEASE.version}/`));assert.equal(link.click(),false);}
+assert.ok(status.textContent.includes(`Version ${context.window.SRN_RELEASE.version}`));assert.ok(hashes.every(item=>!item.disabled));
 context.window.SRN_RELEASE.assets.windows.url='https://example.com/unsafe.exe';vm.runInContext(code,context);assert.equal(links[0].click(),true);assert.equal(status.scrolled,true);
 console.log('PASS: theme, screenshot switching, release link wiring, checksum availability and untrusted-link rejection');
